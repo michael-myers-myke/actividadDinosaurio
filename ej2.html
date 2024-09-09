@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eje2.css">
+    <scrip src="js/ej2.js"></scrip>
+    <title>Document</title>
+</head>
+<body onload="iniciar();"><!--hace la funcion de iniciar cuando se entra a la pagina-->
+    <h1 id="titulo1">Pase de imagenes automatico</h1><!--Es un titulo-->
+
+    <div id="cajaSlide">
+        <img id="imgSlide" src="./images/img1.jpg" title="Imagen"
+        alt="Imagen" onclick="rotarImagenes();"><!--Muestra la imagen-->
+
+        <br><br/>
+
+        <form>
+            <input type="button" value="Parar"
+                   onclick="clearInterval(temporizador);"><!--El boton para parar el cambio automatico-->
+            <input type="button" value="Continuar" onclick="iniciar();"><!--boton para continuar el cambio automatico-->
+        </form>
+    </div>
+
+</body>
+</html>

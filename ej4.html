@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ej4.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>A Calcular</h1><!--Titulo-->
+    <input type="number" id="num1" placeholder="Numero 1"><!--Input para ingresar el primer numero-->
+    <select id="operacion"><!--Select para seleccionar una opcion de operacion matematica-->
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" placeholder="Numero 2"><!--Input para ingresar el segundo numero-->
+    <button onclick="calcular()">Calcular</button><!--Boton para realizar el calculo-->
+    <p id="resultado"></p>
+</body>
+</html>
