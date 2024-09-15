@@ -1,16 +1,16 @@
-* {
+* { /*Reseteo del margin y padding Para que no haya espacios extra en los elementos de la pagina*/
     padding: 0;
     margin: 0;
 }
 
-body{
+body{ /*el body usa flexbox para centrar verticalmente el contenido*/
     height: 100vh;
     background: #584040;
     display: flex;
     align-items: center;
 }
 
-.contenedor {
+.contenedor { /*El contenedor es el espacio donde se desarrollará el juego. Los colores de fondo cambian dependiendo del progreso (mediodía, tarde, noche, etc.).*/
     width: 920px;
     height: 280px;
     margin: 0 auto;
@@ -52,14 +52,14 @@ body{
 
 }
 
-.dino-corriendo {
+.dino-corriendo { /*Animacion para simular que el dino esta corriendo*/
     animation: animarDino 0.25s steps(2) infinite;
 }
 .dino-estrellado {
     background-position-x: -252px;
 }
 
-.suelo {
+.suelo { /*Imagen Suelo*/
     width: 200%;
     height: 42px;
 
@@ -71,7 +71,7 @@ body{
     background-size: 50% 42px;
 
 }
-
+/*Los cactus y las nubes son imágenes que se mueven hacia la izquierda para dar la ilusión de que el dinosaurio está corriendo*/
 .cactus{
     width: 46px;
     height: 96px;
@@ -130,7 +130,7 @@ body{
     font-family: Verdana;
     font-weight: 700;
 }
-
+/*El dinosaurio usa una animación keyframes para moverse, alternando entre dos posiciones de su sprite.*/
 @keyframes animarDino{
     from{
         background-position-x: -84px;
