@@ -42,6 +42,9 @@ body{
 .noche {
     background-color: #aca8c7;
 }
+.nocheNegra {
+    background-color: black;
+}
 
 .dino {
     width: 84px;
@@ -373,6 +376,9 @@ function GanarPuntos() {
     } else if(score == 20) {
         gameVel = 3;
         contenedor.classList.add("noche");
+    } else if(score == 30) { // Aquí se cambia a fondo negro
+        gameVel = 3.5;
+        contenedor.classList.add("nocheNegra");
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
 }
